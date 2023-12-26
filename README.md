@@ -1,4 +1,7 @@
 Please refer Readme.pdf for more details
+
+You can find the scraped data of the restaurants in the Data_exported_from_db.csv file. 
+
 How to reproduce the project
 (A) Using docker-compose.yml
 Step 1: Download the project zip file
