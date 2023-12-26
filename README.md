@@ -3,7 +3,9 @@ Please refer Readme.pdf for more details
 You can find the scraped data of the restaurants in the Data_exported_from_db.csv file. 
 
 How to reproduce the project
+
 (A) Using docker-compose.yml
+
 Step 1: Download the project zip file
 
 Step 2: Install the docker
@@ -19,6 +21,7 @@ docker-compose up –build
 Step 4: Access the endpoints: /scrape_data/{geo_id} and /retreive_data/{geo_id}
 
 (B) Without using docker
+
 Step 1: Download and extract the project zip file
 
 Step 2: Install Python and Mysql workbench
