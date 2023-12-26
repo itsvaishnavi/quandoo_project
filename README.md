@@ -1,5 +1,6 @@
+Please refer Readme.pdf for more details
 How to reproduce the project
-Using docker-compose.yml
+(A) Using docker-compose.yml
 Step 1: Download the project zip file
 
 Step 2: Install the docker
@@ -14,7 +15,7 @@ docker-compose up –build
 
 Step 4: Access the endpoints: /scrape_data/{geo_id} and /retreive_data/{geo_id}
 
-Without using docker
+(B) Without using docker
 Step 1: Download and extract the project zip file
 
 Step 2: Install Python and Mysql workbench
