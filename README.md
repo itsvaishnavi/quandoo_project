@@ -39,7 +39,9 @@ pip install -r requirements.txt
 Step 6: Connect to MySQL database
 
 Step 7: Run load_csv_to_db.py to load the data to database
+
 python load_csv_to_db.py
 
 Step 6: Run app.py 
+
 uvicorn app:app
