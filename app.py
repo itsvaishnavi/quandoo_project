@@ -3,12 +3,16 @@ from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 from scraper import Scrape_All_Data
 from data_storage import DataStorage_SQL
+from load_csv_to_db import LoadData
 
 app = FastAPI()
 
 # Base endpoint
 @app.get("/")
 def hello():
+	l = LoadData("Data_exported_from_db.csv","restaurant_db")
+	l.credentials()
+	l.connect_and_insert_data()
 	return "Hello Quandoo!"
 
 

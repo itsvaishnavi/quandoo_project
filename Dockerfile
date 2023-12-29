@@ -16,7 +16,4 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-CMD ["python3", "load_csv_to_db.py"]
-
-
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]

@@ -26,9 +26,10 @@ class LoadData:
 			df.to_sql(self.table, con=engine, index=False)
 
 			engine.dispose()
+			print("initial data inserted successfully....")
 		except Exception as e:
 			print(e)
 
-l = LoadData("Data_exported_from_db.csv","restaurant_db")
-l.credentials()
-l.connect_and_insert_data()
+# l = LoadData("Data_exported_from_db.csv","restaurant_db")
+# l.credentials()
+# l.connect_and_insert_data()

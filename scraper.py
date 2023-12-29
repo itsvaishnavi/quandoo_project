@@ -17,7 +17,7 @@ class Scraper:
 		self.url_list = []
 
 		# Dictionary format of restaurant details
-		self.restaurant_details = {'url': '', 'restaurant_id': '', 'geo_id':'',\
+		self.restaurant_details = {'url': '', 'restaurant_id': '', 'geo_id':0,\
 		 'fetch_count' : 0,\
 		 'time_of_fetching_data': '', 'total_reviews': 0, 'rating': 0.0, 'rest_name': '', 'address': '', 'telephone': '',\
 		 'website': '', 'tags': '', 'CUISINES': '', 'Special_Diets': '',\

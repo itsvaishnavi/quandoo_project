@@ -1,15 +1,16 @@
 services:
   pythonapp:
     build: .
-    # command: sh -c "sleep 10s ; uvicorn app:app --reload;"
+    # command: sh -c "sleep 10s ; python3 load_csv_to_db.py"
     ports:
       - "8000:8000"
     depends_on:
       - db1
   db1:
-    build:
-      context: .
-      dockerfile: Dockerfile_sql
+    image: mysql:latest
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile_sql
     container_name: "my-db-1"
     restart: always
     environment:
